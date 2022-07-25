@@ -163,7 +163,7 @@ main {
 
 hr{margin: 10px;height:0.2rem;background-color: aliceblue;}
 
-@media only screen and (max-width: 350px) {
+@media only screen and (max-width: 360px) {
 	#new-task-input{margin-right: 0.75rem;}
 	#new-task-submit{
 		font-size: 0.80rem;
