@@ -160,7 +160,9 @@ main {
 	color: crimson;
 }
 .span{margin-left: 1rem;}
+
 hr{margin: 10px;height:0.2rem;background-color: aliceblue;}
+
 @media only screen and (max-width: 350px) {
 	#new-task-input{margin-right: 0.75rem;}
 	#new-task-submit{
@@ -169,5 +171,4 @@ hr{margin: 10px;height:0.2rem;background-color: aliceblue;}
 	.task .actions button{font-size: 0.75rem;}
 	.span{font-size: 0.75rem;
 	font-weight: 900;}
-
   }
