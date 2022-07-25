@@ -73,6 +73,9 @@ window.addEventListener('load', () => {
 		task_delete_el.addEventListener('click', (e) => {
 			list_el.removeChild(task_el);
 		});
+			task_input_el.addEventListener('dblclick', (e) => {
+			Swal.fire(task_input_el.value)
+		});
 	}});
 });
 
