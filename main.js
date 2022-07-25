@@ -8,7 +8,9 @@ window.addEventListener('load', () => {
 
 		const task = input.value;
 		if (task == "") {
-			alert("task vide")
+			Swal.fire(
+				'task vide !!!',
+			)
 		}else{
 
 		const task_el = document.createElement('div');
@@ -41,8 +43,9 @@ window.addEventListener('load', () => {
 	/** */
 	const spano =document.createElement('span');
 	var span_vl=new Date();
-	
-	spano.innerText = span_vl.getDay()+"/"+(span_vl.getMonth()+1)+"/"+span_vl.getFullYear();
+	spano.innerText = span_vl.getDate()+"/"+(span_vl.getMonth()+1)+"/"+span_vl.getFullYear();
+	spano.style.color="white";
+	spano.setAttribute('class','span');
 
 	/**/
 	task_actions_el.appendChild(spano);
