@@ -1,9 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Beginner:wght@600&family=Poppins:ital,wght@1,300&display=swap');
 :root {
 	--dark: #374151;
 	--darker: #1F2937;
 	--darkest: #111827;
-	--grey: #6B7280;
-	--pink: #EC4899;
+	--grey: #ffffff;
+	--pink: #f680bb;
 	--purple: #8B5CF6;
 	--light: #EEE;
 }
@@ -18,8 +19,9 @@ body {
 	display: flex;
 	flex-direction: column;
 	min-height: 100vh;
-	color: #FFF;
-	background-color: var(--dark);
+	/*color: #FFF;
+	background-color: var(--dark);*/
+	background-image:url(img.png);
 }
 
 header {
@@ -27,13 +29,16 @@ header {
 	max-width: 800px;
 	width: 100%;
 	margin: 0 auto;
+
 }
 
 header h1{ 
 	font-size: 2.5rem;
-	font-weight: 300;
+	font-weight: 600;
 	color: var(--grey);
 	margin-bottom: 1rem;
+	font-family: 'Edu VIC WA NT Beginner', cursive;
+	font-family: 'Poppins', sans-serif;
 }
 
 #new-task-form {
@@ -65,7 +70,7 @@ input, button {
 	color: var(--pink);
 	font-size: 1.25rem;
 	font-weight: 700;
-	background-image: linear-gradient(to right, var(--pink), var(--purple));
+	background-image: linear-gradient(to right, var(--pink), var(--grey));
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 	cursor: pointer;
@@ -154,3 +159,15 @@ main {
 .task .actions .delete {
 	color: crimson;
 }
+.span{margin-left: 1rem;}
+hr{margin: 10px;height:0.2rem;background-color: aliceblue;}
+@media only screen and (max-width: 350px) {
+	#new-task-input{margin-right: 0.75rem;}
+	#new-task-submit{
+		font-size: 0.80rem;
+	}
+	.task .actions button{font-size: 0.75rem;}
+	.span{font-size: 0.75rem;
+	font-weight: 900;}
+
+  }
